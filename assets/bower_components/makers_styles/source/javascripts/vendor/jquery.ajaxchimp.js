@@ -29,12 +29,12 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
 
     $.ajaxChimp = {
         responses: {
-            'We have sent you a confirmation email'                                             : 0,
-            'Please enter a value'                                                              : 1,
-            'An email address must contain a single @'                                          : 2,
-            'The domain portion of the email address is invalid (the portion after the @: )'    : 3,
-            'The username portion of the email address is invalid (the portion before the @: )' : 4,
-            'This email address looks fake or invalid. Please enter a real email address'       : 5
+            'Vi har skickat ett konfirmationsmail'                                                                            : 0,
+            'Du måste ange ett värde'                                                                                         : 1,
+            'En emailadress måste innehålla tecknet @'                                                                        : 2,
+            'Domännamnet i den angivna adressen verkar inte stämma (delen efter @: )'                                         : 3,
+            'Användarnamnet i den angivna adressen verkar inte stämma (delen innan @: )'                                      : 4,
+            'Hmm... det verkar som att den angivan adressen är falsk eller i alla fall inte riktigt angiven. Försök igen'     : 5
         },
         translations: {
             'en': null
@@ -64,7 +64,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                 var msg;
                 function successCallback(resp) {
                     if (resp.result === 'success') {
-                        msg = 'We have sent you a confirmation email';
+                        msg = 'Vi har skickat ett konfirmationsmail';
                         label.removeClass('error').addClass('valid');
                         email.removeClass('error').addClass('valid');
                     } else {
@@ -128,7 +128,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                 });
 
                 // Translate and display submit message
-                var submitMsg = 'Submitting...';
+                var submitMsg = 'Skickar...';
                 if(
                     settings.language !== 'en'
                     && $.ajaxChimp.translations
