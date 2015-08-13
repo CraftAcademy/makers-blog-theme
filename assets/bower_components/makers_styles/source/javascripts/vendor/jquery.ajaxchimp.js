@@ -29,7 +29,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
 
     $.ajaxChimp = {
         responses: {
-            'Vi har skickat ett konfirmationsmail'                                                                            : 0,
+            'Vi har skickat ett konfirmationsmail till den angivan adressen... Kolla din inbox.'                                                                            : 0,
             'Du måste ange ett värde'                                                                                         : 1,
             'En emailadress måste innehålla tecknet @'                                                                        : 2,
             'Domännamnet i den angivna adressen verkar inte stämma (delen efter @: )'                                         : 3,
@@ -52,7 +52,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
 
             var settings = $.extend({
                 'url': form.attr('action'),
-                'language': 'en'
+                'language': 'se'
             }, options);
 
             var url = settings.url.replace('/post?', '/post-json?').concat('&c=?');
@@ -64,7 +64,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                 var msg;
                 function successCallback(resp) {
                     if (resp.result === 'success') {
-                        msg = 'Vi har skickat ett konfirmationsmail';
+                        msg = 'Vi har skickat ett konfirmationsmail till den angivan adressen... Kolla din inbox.';
                         label.removeClass('error').addClass('valid');
                         email.removeClass('error').addClass('valid');
                     } else {
