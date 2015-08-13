@@ -28,16 +28,15 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
     'use strict';
 
     $.ajaxChimp = {
-        responses: {
-            'Vi har skickat ett konfirmationsmail till den angivan adressen... Kolla din inbox.'                                                                            : 0,
-            'Du måste ange ett värde'                                                                                         : 1,
-            'En emailadress måste innehålla tecknet @'                                                                        : 2,
-            'Domännamnet i den angivna adressen verkar inte stämma (delen efter @: )'                                         : 3,
-            'Användarnamnet i den angivna adressen verkar inte stämma (delen innan @: )'                                      : 4,
-            'Hmm... det verkar som att den angivan adressen är falsk eller i alla fall inte riktigt angiven. Försök igen'     : 5
-        },
         translations: {
-            'en': null
+            'se': {
+                'Vi har skickat ett konfirmationsmail till den angivan adressen... Kolla din inbox.'                                                                            : 0,
+                'Du måste ange ett värde'                                                                                         : 1,
+                'En emailadress måste innehålla tecknet @'                                                                        : 2,
+                'Domännamnet i den angivna adressen verkar inte stämma (delen efter @: )'                                         : 3,
+                'Användarnamnet i den angivna adressen verkar inte stämma (delen innan @: )'                                      : 4,
+                'Hmm... det verkar som att den angivan adressen är falsk eller i alla fall inte riktigt angiven. Försök igen'     : 5
+            }
         },
         init: function (selector, options) {
             $(selector).ajaxChimp(options);
