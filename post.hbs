@@ -10,7 +10,7 @@
     <h2>{{title}}</h2>
 
     {{#author}}
-    <p class="author">by {{name}}</p>
+    <p class="author">av {{name}}</p>
     {{/author}}
 
     <p class="date">
@@ -36,7 +36,7 @@
     {{>email-capture}}
 
     <div class="share">
-      <h4>Share this post</h4>
+      <h4>Dela detta inlägg</h4>
       <a class="icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
          onclick="window.open(this.href, "twitter-share", "width=550,height=235");return false;">
         <span class="hidden">Twitter</span>
@@ -55,7 +55,7 @@
 
 
 <aside class="read-next article--centered loop">
-  <h4>Related</h4>
+  <h4>Relaterade inlägg</h4>
     {{#next_post}}
     <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
         <section class="post no-min-height">
