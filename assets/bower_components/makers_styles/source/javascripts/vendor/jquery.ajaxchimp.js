@@ -93,7 +93,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
 
                     // Translate and display message
                     if (
-                        settings.language !== 'en'
+                        settings.language !== 'se'
                         && $.ajaxChimp.responses[msg] !== undefined
                         && $.ajaxChimp.translations
                         && $.ajaxChimp.translations[settings.language]
