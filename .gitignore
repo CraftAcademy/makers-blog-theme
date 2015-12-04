@@ -6,6 +6,8 @@ b-cov
 *.out
 *.pid
 *.gz
+.env
+makers-blog-theme.zip
 
 pids
 logs
@@ -13,6 +15,8 @@ results
 
 npm-debug.log
 node_modules
+
+bower_components
 
 .idea/*
 *.iml
