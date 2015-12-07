@@ -4,6 +4,10 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 
 {{! Everything inside the #post tags pulls data from the post }}
+{{>splash}}
+
+{{navigation}}
+
 {{#post}}
 <section class="article--centered">
   <article>
@@ -74,8 +78,3 @@
     {{/prev_post}}
   </aside>
 {{/post}}
-
-
-{{>splash}}
-
-{{navigation}}

@@ -12,28 +12,19 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="{{asset "favicon-16x16.png"}}" sizes="16x16" type="image/png">
-    <link rel="shortcut icon" href="{{asset "favicon-32x32.png"}}" sizes="32x32" type="image/png">
-    <link rel="shortcut icon" href="{{asset "favicon-96x96.png"}}" sizes="96x96" type="image/png">
+    <link rel="shortcut icon" href="//assets.craftacademy.se/images/favicons/favicon.ico">
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "bower_components/craftacademy_styles/source/stylesheets/all.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/blog.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
 
-    {{! Typekit }}
-    <script src="//use.typekit.net/fla8fba.js"></script>
-    <script>try{Typekit.load();}catch(e){} </script>
-
-    {{! Segment.io }}
-    {{> analytics_scripts }}
-
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
   </head>
   <body class="{{body_class}} nav-closed">
 
-    {{> google_tag_manager }}
+    {{!-- {{> google_tag_manager }} --}}
 
     {{!navigation}}
 
@@ -56,11 +47,10 @@
     {{! Makers JavaScript }}
     <script type="text/javascript" src="{{asset "bower_components/craftacademy_styles/source/javascripts/all.js"}}"></script>
     <script type="text/javascript" src="{{asset "bower_components/craftacademy_styles/source/javascripts/doorbell.js"}}"></script>
-    <script type="text/javascript" src="{{asset "bower_components/craftacademy_styles/source/javascripts/hooks.js"}}"></script>
     <script type="text/javascript" src="{{asset "bower_components/craftacademy_styles/source/javascripts/jquery.fixedscroll.js"}}"></script>
-    <script type="text/javascript" src="{{asset "bower_components/craftacademy_styles/source/javascripts/email_capture.js"}}"></script>
+    {{!-- // <script type="text/javascript" src="{{asset "bower_components/craftacademy_styles/source/javascripts/email_capture.js"}}"></script> --}}
     <script type="text/javascript" src="{{asset "bower_components/craftacademy_styles/source/javascripts/navigation.js"}}"></script>
-    <script type="text/javascript" src="{{asset "bower_components/craftacademy_styles/source/javascripts/vendor/retina.min.js"}}"></script>
+    {{!-- // <script type="text/javascript" src="{{asset "bower_components/craftacademy_styles/source/javascripts/vendor/retina.min.js"}}"></script> --}}
     <script type="text/javascript" src="{{asset "bower_components/craftacademy_styles/source/javascripts/vendor/slick.js"}}"></script>
 
     {{! Prism }}
